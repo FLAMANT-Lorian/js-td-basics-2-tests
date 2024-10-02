@@ -11,3 +11,15 @@
 // Exemple : si la moyenne du candidat est de 11, le programme devrait afficher "Le candidat est reçu."
 
 // N'oubliez pas de tester votre programme avec différentes moyennes pour couvrir tous les cas de figure.
+
+const moyenneCandidat = 11;
+
+if (moyenneCandidat < 10){
+    console.log("Le candidat est recalé.");
+} else if (moyenneCandidat > 10 && moyenneCandidat < 12){
+    console.log("Le candidat est reçu.");
+} else if  (moyenneCandidat >= 12 && moyenneCandidat <= 20) {
+    console.log("Le candidat est reçu avec mention.");
+} else {
+    console.log("Erreur : la note de l'étudiant(e) doit être compris entre 0 et 20 !");
+}
