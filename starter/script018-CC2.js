@@ -21,6 +21,24 @@ alors que l'équipe de Mike a marqué 116, 94 et 123 points.
 BONNE CHANCE 😀
 */
 
+const jhonPointMoyenne = (54 + 794 + 123)/3;
+const mikePointMoyenne = (98 + 87 + 122)/3;
+const maryPointMoyenne = (97 + 134 + 105)/3;
+
+if (jhonPointMoyenne > mikePointMoyenne && jhonPointMoyenne > maryPointMoyenne){
+    console.log(`C'est l'équipe de Jhon qui gagne avec un score moyen de ${jhonPointMoyenne} point.`);
+} else if (jhonPointMoyenne < mikePointMoyenne && mikePointMoyenne > maryPointMoyenne) {
+    console.log(`C'est l'équipe de Mike qui gagne avec un score moyen de ${mikePointMoyenne} point.`);
+} else if (jhonPointMoyenne < maryPointMoyenne && mikePointMoyenne < maryPointMoyenne){
+    console.log(`C'est l'équipe de Mary qui gagne avec un score moyen de ${maryPointMoyenne} point.`)
+}
+else {
+    console.log(`Les deux équipes ont un score moyen exactement équivalent avec ${jhonPointMoyenne} point.`);
+}
+
+
+
+
 // sans bonus
 
 // 1. Calculez le score moyen de chaque équipe.

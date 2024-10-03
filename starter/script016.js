@@ -6,7 +6,7 @@
 
 // 1. Écrivez une expression ternaire pour afficher "John boit des bières" ou "John boit des jus" selon qu'il est majeur ou pas.
 // 2. Testez en changeant l'âge de John (14 ans, 24 ans)
-let age = 16;
+let age = 14;
 console.log(age > 18 ? "John boit des bières" : "John boit des jus");
 
 // MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou une autre valeur à une variable selon qu'une condition est remplie ou pas
@@ -15,6 +15,12 @@ console.log(age > 18 ? "John boit des bières" : "John boit des jus");
 const drink = (age > 18 ? "bières" : "jus");
 console.log(`Jhon boit des ${drink}`);
 // Faites la même chose en utilisant un if / else
+
+if (age > 18) {
+    console.log("John boit des bières");
+} else {
+    console.log("John boit des jus");
+}
 
 // 16 - 2. L'instruction Switch
 
