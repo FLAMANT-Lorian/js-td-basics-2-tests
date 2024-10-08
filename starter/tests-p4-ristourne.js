@@ -30,8 +30,8 @@ Valeurs de test :
 // 7. Sinon, attribuez 5% de réduction (discount = montant des achats * 0.05).
 // 8. Affichez le montant de la réduction (discount) en euros dans la console.
 
-const montantAchatUser = Number(prompt('Entrer le montant totale de vos achats :'));
-const nombreEnfantUser = Number(prompt("Entrer le nombre d'enfantss :"));
+const montantAchatUser = parseInt(prompt('Entrer le montant totale de vos achats :'));
+const nombreEnfantUser = parseInt(prompt("Entrer le nombre d'enfantss :"));
 let discount = 0;
 
 if((montantAchatUser > 50 && nombreEnfantUser >= 3) || montantAchatUser > 125){

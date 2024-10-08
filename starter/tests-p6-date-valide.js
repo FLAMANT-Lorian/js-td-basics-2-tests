@@ -28,9 +28,11 @@ N'oubliez pas de tester votre programme avec diverses dates pour vous assurer qu
 Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
 
-const day = Number(prompt('Indiquer le jour (en chiffres) :'));
+// Solution 1
+
+const day = parseInt(prompt('Indiquer le jour (en chiffres) :'));
 const month = String(prompt('Indiquer le mois (en lettres sans majuscule) :'));
-const years = Number(prompt("Indiquer l'année (en chiffres):"));
+const years = parseInt(prompt("Indiquer l'année (en chiffres):"));
 let maxDay;
 
 

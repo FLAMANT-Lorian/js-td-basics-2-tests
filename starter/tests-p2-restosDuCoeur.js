@@ -27,7 +27,7 @@ Tester avec des montants d'achat de
 //    b) Si la condition est fausse, la somme versée aux restos du cœur est de 0€.
 // 4. Affichez la somme versée aux restos du cœur dans la console.
 
-const montantTotale = Number(prompt('Veuillez entrer le montant totale de vos achats :'));
+const montantTotale = parseInt(prompt('Veuillez entrer le montant totale de vos achats :'));
 
 if (montantTotale > 25) {
     const ristourne = (0.1 * montantTotale);

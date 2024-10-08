@@ -6,6 +6,20 @@
 // falsy values: undefined, null, 0, '', NaN (correspond aux cas où il n'y a rien)
 // truthy values: NOT falsy values (tous les autres cas : il y a quelque chose)
 
+/*
+falsy
+if (null)
+if (undefined)
+if (0)
+if (null)
+if (NaN)
+
+Truthy
+tout le reste
+*/
+
+
+
 // 1. Déclarez la variable height
 // 2. Affectez-lui la valeur 23
 // 3. Testez si la variable height est définie et affichez "La variable height est définie" ou "La variable height n'est PAS définie" selon le cas

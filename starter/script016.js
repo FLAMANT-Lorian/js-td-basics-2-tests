@@ -111,7 +111,7 @@ switch (meteo){
 // 1. Demandez à l'utilisateur d'entrer le numéro du jour de la semaine
 // 2. Affichez ensuite dans la console le message suivant : "Les jours suivants se sont déjà écoulés depuis le début de la semaine : …, …, …"
 
-const dayNumber = Number(prompt("Indiquer le numéro du jour de la semaine"));
+const dayNumber = parseInt(prompt("Indiquer le numéro du jour de la semaine"));
 switch (dayNumber){
     case 1:
         console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : Lundi");

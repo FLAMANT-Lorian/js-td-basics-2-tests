@@ -45,7 +45,7 @@ if (bonjour === 'Bonjour' || bonjour === 'bonjour'){
 
 // 1. Demandez à l'utilisateur d'entrer un nombre et enregistrez ce nombre dans une constante nombre
 // 2. Si ce nombre est positif, affichez "… est positif", sinon, affichez "… est négatif ou nul"
-const nombreB = Number(prompt('Veuillez insérer un nombre :'));
+const nombreB = parseInt(prompt('Veuillez insérer un nombre :'));
 if (nombreB > 0){
     console.log(`${nombreB} est positif !`);
 } else if (nombreB <= 0){
@@ -96,7 +96,7 @@ if (markBMI > jhonBMI) {
 }
 // Écrire un programme qui teste si un nombre entré par l’utilisateur est pair ou impair.
 
-const nombreC = Number(prompt('Veuillez entrer un nombre entier :'));
+const nombreC = parseInt(prompt('Veuillez entrer un nombre entier :'));
 
 if (nombreC%2 === 0){
     console.log('Votre nombre est pair');

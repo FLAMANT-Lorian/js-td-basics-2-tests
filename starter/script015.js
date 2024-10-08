@@ -81,7 +81,7 @@ if (!(userNumberC > 100)){
 // 1°) s'il est négatif, affichez "… est négatif",
 // 2°) sinon, affichez "… est nul"
 
-const userNumbersD = Number(prompt('Veuillez entrer un nombre :'));
+const userNumbersD = parseInt(prompt('Veuillez entrer un nombre :'));
 if (userNumbersD > 0) {
     console.log(`${userNumbersD} est positif`);
 } else {
@@ -115,7 +115,7 @@ if (userNumbersD > 0){
 // d) sinon, affichez "… est un homme."
 
 const firstName = prompt('Quel est votre prénom ?');
-const age = Number(prompt('Quel est votre age ?'));
+const age = parseInt(prompt('Quel est votre age ?'));
 if (age < 13){
     console.log(`${firstName} est un petit garçon.`);
 } else if (age > 13 && age <= 20){

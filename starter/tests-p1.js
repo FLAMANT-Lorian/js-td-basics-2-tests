@@ -12,8 +12,8 @@ sachant qu’on accorde 10% de ristourne si le client achète au moins 20 articl
 //    b) Si la condition est fausse, laissez le montant total tel quel.
 // 4. Affichez le montant total de la facture dans la console.
 
-const nombreArticleAchete = Number(prompt("Combien d'articles avez-vous acheté ?"));
-const prixUnitaireArticle = Number(prompt("Qu'elle est le prix unitaire d'un articles ?"));
+const nombreArticleAchete = parseInt(prompt("Combien d'articles avez-vous acheté ?"));
+const prixUnitaireArticle = parseInt(prompt("Qu'elle est le prix unitaire d'un articles ?"));
 const montantTotal = nombreArticleAchete * prixUnitaireArticle;
 const ristourne = montantTotal - (0.1 * montantTotal);
 
