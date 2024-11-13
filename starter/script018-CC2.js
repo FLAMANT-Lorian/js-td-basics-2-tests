@@ -35,10 +35,6 @@ if (jhonPointMoyenne > mikePointMoyenne && jhonPointMoyenne > maryPointMoyenne){
 else {
     console.log(`Les deux équipes ont un score moyen exactement équivalent avec ${jhonPointMoyenne} point.`);
 }
-
-
-
-
 // sans bonus
 
 // 1. Calculez le score moyen de chaque équipe.

@@ -29,17 +29,17 @@ Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
 
 // Solution 1
-
-const day = parseInt(prompt('Indiquer le jour (en chiffres) :'));
+/*
+const day = parseInt(prompt('Indiquer le jour (en nombres) :'));
 const month = String(prompt('Indiquer le mois (en lettres sans majuscule) :'));
-const years = parseInt(prompt("Indiquer l'année (en chiffres):"));
+const years = parseInt(prompt("Indiquer l'année (en nombres):"));
 let maxDay;
 
 
 if (month === 'février' && years > 0 && day <=29) {
-    if ((years % 4 === 0 && years % 100 !== 0) || (years % 100 === 0 && years % 400 === 0) && day <= 29) {
+    if ((years % 4 === 0 && years % 100 !== 0) || (years % 400 === 0) && day === 29) {
         console.log(`La date : ${day} ${month} ${years} existe bien.`);
-        } else if (day <= 28){
+        } else if (day >= 28){
             console.log(`La date : ${day} ${month} ${years} existe bien.`);
         } else {
         console.log(`La date : ${day} ${month} ${years} n'existe pas.`);
@@ -60,4 +60,55 @@ if (month === 'février' && years > 0 && day <=29) {
     }
 } else {
     console.log(`La date : ${day} ${month} ${years} n'existe pas.`);
+}
+*/
+
+// Solution 2 : la meilleure
+const day = parseInt(prompt('Indiquer le jour (en nombres) :'));
+const month = parseInt(prompt('Indiquer le mois (en nombres) :'));
+const years = parseInt(prompt("Indiquer l'année (en nombres):"));
+let maxDays = 0;
+
+switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        maxDays = 31;
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        maxDays = 30;
+        break;
+    case 2:
+        maxDays = 28;
+        if (year % 4 === 0 && year % 100 !== 0) {
+            maxDays = 29;
+        } else if (year % 400 === 0) {
+            maxDays = 29;
+        }
+        break;
+}
+
+if (day && month && years) { // Valeurs thrusty et falsy, elles doivent toutes êtres true pour que ça fonctionne, ca doit être des nombes partout pour que ça marche (exemple : si on met toto a day , ca va faire parsInt('toto') et nous retourné 'NaN' donc False !
+    if (day > 0 && month > 0 && years > 0) {
+        if (month >= 1 && month <= 12) {
+            if (day <= maxDays) {
+                console.log(`La date ${day} / ${month} / ${year} existe bien !`);
+            } else {
+                console.log(`Le nombre du mois ${month} doit être inférieur à ${maxDays}`);
+            }
+        } else {
+        console.log('Le mois doit être compris entre 1 et 12 !');
+        }
+    } else {
+        console.log("le jour, le mois et l'année doivent être positifs !");
+    }
+} else {
+    console.log("le jour, le mois et l'année doivent être des nombres !");
 }
